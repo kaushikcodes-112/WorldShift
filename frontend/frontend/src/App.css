@@ -1,0 +1,154 @@
+#root {
+    min-height: 100vh;
+}
+
+.worldshift {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    color: #172033;
+}
+
+.page-header {
+    margin-bottom: 32px;
+}
+
+.page-header h1 {
+    margin-bottom: 8px;
+    font-size: 2.5rem;
+}
+
+.page-header p {
+    color: #64748b;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgb(15 23 42 / 5%);
+}
+
+.panel h2 {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    display: grid;
+    gap: 8px;
+    font-weight: 600;
+}
+
+select,
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    color: #172033;
+    font: inherit;
+}
+
+select[multiple] {
+    min-height: 150px;
+}
+
+.hint {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.year-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+button {
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #1d4ed8;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+.results h3 {
+    margin-top: 32px;
+}
+
+.chart-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 24px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+th {
+    background: #f8fafc;
+}
+
+@media (max-width: 600px) {
+    .worldshift {
+        padding: 20px 12px;
+    }
+
+    .panel {
+        padding: 16px;
+    }
+
+    .year-inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-container {
+        height: 320px;
+    }
+}
